@@ -17,13 +17,14 @@ call plug#end()
 syntax on
 
 set number
-set textwidth=80
 set nobackup
 set nowritebackup
 set noswapfile
 set ruler            " show the cursor position always
+set nowrap
 set autowrite        " automatically :write before running commands
 set modelines=0      " disable modelines as a security precaution
+set backspace=indent,eol,start   " more powerfull backspacing
 
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
