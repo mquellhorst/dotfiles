@@ -1,0 +1,35 @@
+# ~/.aliases
+
+# Moving
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias vi='vim'
+
+# Quick edits
+alias ev='$EDITOR ~/.vimrc'
+alias ea='$EDITOR ~/.aliases'
+alias ez='$EDITOR ~/.zshrc'
+alias sz='source ~/.zshrc'
+
+# Commands
+alias ls='gls -Glah --color=always'
+# nice directory tree listing showing permissions, user, group and size (human readable)
+alias t="tree -L 1 --dirsfirst -shugp"
+# nice directory tree listing, but just 2 levels
+alias tt="tree -L 2 --dirsfirst"
+
+# Shortcuts
+alias dc='cd $HOME/Documents'
+alias dl='cd $HOME/Downloads'
+alias dw='cd $HOME/Workspace'
+alias dt='cd $HOME/Workspace/dotfiles'
+
+# Django Shortcuts
+alias pm='python manage.py'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+

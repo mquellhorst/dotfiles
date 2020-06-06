@@ -1,0 +1,6 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Michiel Quellhorst
+	email = michiel@ooble.nl
+[credential]
+	helper = osxkeychain
