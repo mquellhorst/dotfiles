@@ -4,3 +4,5 @@
 	email = michiel@ooble.nl
 [credential]
 	helper = osxkeychain
+[pull]
+	rebase = true
