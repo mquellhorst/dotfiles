@@ -3,8 +3,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:$PATH
 
-# OhMyZSH implemented some (false?) security check, disable it for completion to work
-ZSH_DISABLE_COMPFIX=true
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/mquellhorst/.oh-my-zsh"
@@ -84,7 +82,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# OhMyZSH implemented some (false?) security check, disable it for completion to work
+ZSH_DISABLE_COMPFIX=true
+
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# Change the dir .zcompdump files, so they don't clutter home
+# Note: this dir needs to be created manually
+compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 
 # Homebrew settings
 export HOMEBREW_NO_ANALYTICS=1
